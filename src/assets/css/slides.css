@@ -1,0 +1,49 @@
+.slides {
+    margin-top: 5%;
+}
+
+.slides .next-page {
+    position: relative;
+    width: 100%;
+}
+
+.slides img {
+    width: 95%;
+    margin-left: 2.5%;
+    z-index: 0;
+}
+
+.slides .change {
+    position: absolute;
+    bottom: 10%;
+    right: 12%;
+    background-color: white;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.slides .next-page .prev {
+    right: 6%;
+}
+
+.slides .change:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+    .slides .change {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .slides .change {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,227 @@
+ .simpletext {
+     font-family: 'Franklin Gothic Book', sans-serif;
+ }
+
+ .background {
+     background-image: url("../img/bg/homepage.svg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ h1 {
+     margin: 0;
+     padding: 0;
+     line-height: 1;
+ }
+
+ p {
+     font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+     margin-top: 3%;
+ }
+
+ .first-page .button {
+     margin-top: 10%;
+     padding-bottom: 20%;
+ }
+
+ @media only screen and (min-width: 980px) {
+
+     .first-page {
+         width: 42%;
+         margin-left: 10%;
+     }
+
+     .company-name {
+         font-size: 128px;
+         font-weight: normal;
+         padding-top: 15%;
+         text-align: left;
+     }
+
+     .slogan {
+         font-size: 32px;
+         line-height: 1;
+         margin-top: 1%;
+     }
+
+     .simpletext,
+     .simpletext p {
+         width: 90%;
+         /* text-align: justify; */
+         font-size: 20px;
+         color: var(--grey-100);
+         margin-top: 3%;
+         line-height: 1.2;
+         font-stretch: condensed;
+     }
+
+     .cycle {
+         background-image: url("../img/icons/cycle.svg");
+         background-position: center;
+         background-size: contain;
+         background-repeat: no-repeat;
+
+     }
+
+     .cycle .fit {
+         margin-top: 5%;
+         height: 11em;
+         width: 90%;
+     }
+
+     .technics-page h2,
+     .kikoff h2 {
+         font-size: 40px;
+     }
+
+     .technics h3 {
+         font-size: 32px;
+     }
+
+     .technics-page .simpletext {
+         margin: auto;
+     }
+
+     .technics {
+         margin: auto;
+     }
+ }
+
+ @media only screen and (max-width: 980px) {
+     .background {
+         background-color: var(--blue-50);
+         background-image: url("../img/bg/homepageM.svg");
+         padding-left: 5%;
+         padding-right: 5%;
+     }
+
+     .first-page .company-name {
+         padding-top: 30%;
+         text-align: left;
+         font-weight: normal;
+         font-size: 48px;
+     }
+
+     .first-page .slogan {
+         margin-top: 3%;
+         margin-bottom: 8%;
+         font-size: 20px;
+     }
+
+     .simpletext,
+     .simpletext p {
+         text-align: justify;
+         line-height: 1.2;
+         font-size: 15px;
+         margin-top: 3%;
+     }
+
+     .trusted .container img {
+         width: 30%;
+     }
+
+     .first-page .button button {
+         width: 90%;
+         margin-right: 5%;
+         margin-left: 5%;
+     }
+
+     .cycle {
+         background-image: url("../img/icons/cycleM.svg");
+         background-position: center;
+         background-size: contain;
+         background-repeat: no-repeat;
+
+     }
+
+     .cycle .fit {
+         margin-top: 5%;
+         height: 40em;
+     }
+
+     .technics-page h2,
+     .kikoff h2 {
+         font-size: 24px;
+     }
+
+     .technics h3 {
+         font-size: 20px;
+     }
+
+ }
+
+
+ .trusted {
+     background-color: var(--blue-75);
+     color: black;
+     font-size: 20px;
+     padding: 2% 8%;
+     padding-bottom: 3%;
+
+ }
+
+ .trusted .container {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .trusted .container img {
+     height: 50px;
+ }
+
+
+ .gradient-bg {
+     background: linear-gradient(var(--blue-50), var(--blue-75), var(--blue-50));
+     background-size: cover;
+ }
+
+
+ .technics-page {
+     margin-top: 10%;
+     margin-left: 5%;
+     margin-right: 5%;
+ }
+
+ .technics {
+     display: flex;
+     justify-content: space-between;
+     flex-flow: row wrap;
+     margin-bottom: 15%;
+
+ }
+
+ .technics>div {
+     padding: auto;
+     border: 3px transparent dashed;
+     border-left: 3px var(--grey-50) dashed;
+
+ }
+
+ .technics div:first-child {
+     border-left: none;
+ }
+
+ .technics-page h2,
+ .kikoff h2 {
+     margin-top: 10%;
+     margin-bottom: 5%;
+     font-weight: bold;
+     width: 100%;
+     font-family: var(--headingFont);
+     line-height: 1.2;
+     text-align: center;
+ }
+
+ .technics>div h3 {
+     padding-left: 5px;
+     text-align: center;
+     margin-top: auto;
+     margin-bottom: auto;
+     font-weight: 100;
+ }
+
+ .technics-page .simpletext {
+     color: var(--gery-50);
+     text-align: justify;
+ }
