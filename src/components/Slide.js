@@ -30,8 +30,12 @@ query QuerySlideLaptop {
 
   const laptopContainer = data.laptopImage.nodes;
   const mobileContainer = data.mobileImage.nodes;
+  let format = laptopContainer;
 
-  const format = (window.innerWidth < 767) ? mobileContainer : laptopContainer
+  if (typeof window !== 'undefined') {
+    format = (window.innerWidth < 767) ? mobileContainer : laptopContainer;
+  }
+
   return (
 
     <div className="slide">
