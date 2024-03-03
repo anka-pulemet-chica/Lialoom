@@ -1,4 +1,7 @@
 .pricing {
+    background: linear-gradient($grey-bg, $blue-light);
+    ;
+
     .boxes {
         .box {
             .price {
@@ -115,7 +118,7 @@
                 }
 
                 .benefits {
-                    min-height: 550px;
+                    min-height: 650px;
                 }
 
 
@@ -233,7 +236,7 @@
                 }
 
                 .benefits {
-                    height: 400px;
+                    height: 650px;
                 }
 
                 .price {

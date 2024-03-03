@@ -39,7 +39,7 @@ const Pricing = () => {
     return (
         <Layout>
             <div className="pricing">
-                <div className="page-header"><h1>Pricing</h1></div>
+                <div className="page-header">Pricing</div>
                 <div className="boxes">
                     {prices.map((price, index) => {
                         return (<div className="box">

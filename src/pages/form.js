@@ -6,20 +6,20 @@ const Form = () => {
     return (
         <Layout>
             <main className="form-page">
-                <section>
+                <section className="box">
                     <form className="form contact-form">
                         <div className="form-row">
                             <h2>Contact details</h2>
                             <br />
-                            <label htmlFor="name">your name</label>
+                            <span htmlFor="name">Your name</span>
                             <input type="text" name="name" id="name" />
                         </div>
                         <div className="form-row">
-                            <label htmlFor="email">your email</label>
+                            <span htmlFor="email">Your Email</span>
                             <input type="text" name="email" id="email" />
                         </div>
                         <div className="form-row">
-                            <label htmlFor="message">message</label>
+                            <span htmlFor="message">Message</span>
                             <textarea name="message" id="message"></textarea>
                         </div>
                         <button type="submit" className="btn block">

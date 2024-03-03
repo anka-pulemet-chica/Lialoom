@@ -10,6 +10,11 @@ body {
     @extend %roboto-medium;
 }
 
+.linearbg {
+    background: linear-gradient($grey-bg,
+            $blue-light,
+            $grey-bg);
+}
 
 .box {
     border-radius: 30px;
@@ -17,8 +22,20 @@ body {
     background-color: white;
     padding: 3%;
 
+    p {
+        font-family: $FranklinMedium-font;
+    }
+
+    span {
+        margin-bottom: 2%;
+        color: $grey-another-dark;
+    }
+
     hr {
-        border-top: 2px dotted $grey-light;
+        border-top: 2px dashed $grey-light;
+        width: 100%;
+        padding: 0;
+        margin: 5% 0;
     }
 }
 
@@ -34,7 +51,14 @@ a {
 }
 
 hr {
-    border-top: $blue-dark 1px dotted;
+    border-top: 2px dashed $grey-light;
+    width: 90%;
+    margin: 5%;
+
+}
+
+.lialoom {
+    color: $blue-dark;
 }
 
 h1,
@@ -66,8 +90,6 @@ button {
     font-family: $FranklinMedium-font;
 }
 
-@include tablet {}
-
 
 
 
@@ -86,6 +108,17 @@ button {
 
     .page-header {
         font-size: $font-h1-laptop;
+    }
+
+    .box {
+
+        p {
+            font-size: $font-bold-subtitile-laptop;
+        }
+
+        span {
+            font-size: $font-plain-text-laptop;
+        }
     }
 
 
@@ -109,6 +142,19 @@ button {
     .page-header {
         font-size: $font-h1-mobile;
     }
+
+    .box {
+
+        p {
+            font-size: $font-bold-subtitile-mobile;
+        }
+
+        span {
+            font-size: $font-plain-text-mobile;
+        }
+
+
+    }
 }
 
 @include tablet {
@@ -120,12 +166,25 @@ button {
     button {
         text-align: center;
         height: 40px;
-        width: 170px;
-        font-size: #{$font-button-mobile};
+        width: 150px;
+        font-size: $font-button-mobile;
         border-radius: 20px;
     }
 
     .page-header {
         font-size: $font-h1-tablet;
     }
+
+    .box {
+
+        p {
+            font-size: $font-bold-subtitile-tablet;
+        }
+
+        span {
+            font-size: $font-plain-text-tablet;
+
+        }
+    }
+
 }

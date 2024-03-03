@@ -1,7 +1,7 @@
 @include laptop {
     .header {
 
-        font-size: $font-plain-text-tablet;
+        font-size: $font-plain-text-laptop;
 
         padding-left: 0.5rem;
         padding-right: 1rem;
@@ -114,7 +114,7 @@
 
     .header {
 
-        font-size: $font-plain-text-tablet;
+        font-size: $font-plain-text-mobile;
         margin: 0;
 
 
@@ -140,17 +140,17 @@
 
             .nav-links {
                 display: flex;
-                margin: 0 0.5%;
+                margin: 0 0;
 
                 .nav-link {
-                    padding: 0 4px;
+                    padding: 0 9px;
                 }
 
             }
 
             .drop {
                 position: absolute;
-                top: 4.2rem;
+                top: 3.4rem;
                 border-color: white;
                 padding-left: 100px;
                 border: var(--blue-50) 0px solid;

@@ -1,0 +1,44 @@
+.case-studies {
+    text-align: center;
+    background: linear-gradient($grey-bg, $blue-light, $grey-bg);
+
+
+    .box {
+        text-align: justify;
+        margin: 10px;
+
+        p {
+            margin-top: 5%;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+
+        .linkto {
+            margin-top: 15px;
+            @extend %roboto-bold;
+
+            a {
+                text-align: left;
+                color: $blue-dark;
+                text-decoration: none;
+            }
+
+            .arrow {
+                position: relative;
+                bottom: 2px;
+                left: 5px;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .case-studies {
+        img {
+            max-height: 500px;
+        }
+    }
+}

@@ -9,7 +9,7 @@
 }
 
 
-label {
+span {
     display: block;
     font-size: var(--smallText);
     margin-bottom: 0.5rem;

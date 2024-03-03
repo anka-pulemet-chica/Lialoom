@@ -1,0 +1,39 @@
+.pr {
+    background: linear-gradient($grey-bg, #EEF2F6);
+
+
+    .diff {
+        background-color: $blue-light;
+        padding: 7%;
+        text-align: center;
+
+        .diff-container {
+            display: flex;
+        }
+
+        p {
+            margin: 5%;
+            text-align: justify;
+
+        }
+    }
+}
+
+@include mobile {
+    .pr {
+        .diff-container {
+            flex-direction: column;
+
+            p {
+                text-align: justify;
+                margin-left: 0;
+                margin-right: 2%;
+                min-height: 150px;
+            }
+
+            .second-row {
+                border-top: 1px dashed $blue-dark;
+            }
+        }
+    }
+}

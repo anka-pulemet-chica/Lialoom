@@ -1,112 +1,212 @@
 .paired {
     display: flex;
     flex-direction: row;
-}
+    margin: 7% 5%;
 
-.paired>div {
-    margin-top: 7%;
-    margin-bottom: 7%;
-    margin-left: 5%;
-}
+    >div {
+        margin-left: 5%;
+    }
 
-.paired h1 {
-    text-align: right;
-    width: fit-content;
-    white-space: nowrap;
-}
+    h1 {
+        text-align: right;
+        width: fit-content;
+        white-space: nowrap;
+    }
 
-.paired h2 {
-    line-height: 1;
-    font-size: 24px;
+    p {
+        line-height: 1;
+        @extend %roboto-bold;
+        text-align: justify;
+    }
 }
 
 .idea {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+
+    p {
+        @extend %roboto-bold;
+        margin: 3% 0;
+    }
+
+    .pic {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .box {
+        width: 60%;
+        margin-bottom: 3%;
+
+        h3 {
+            @extend %roboto-bold;
+        }
+    }
+
+    .picbox {
+        display: flex;
+    }
 }
-
-.idea p,
-.some-text p,
-.some-text spin,
-.longbox p {
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1;
-
-}
-
-.idea .pic {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.idea .box {
-    width: 70%;
-    margin-bottom: 5%;
-    margin-top: 0;
-    background-color: white;
-    box-shadow: var(--shadow-2);
-
-}
-
-.idea .picbox {
-    display: flex;
-}
-
 
 .some-text {
-    margin-left: 10%;
-    margin-right: 10%;
-}
+    margin: 0 5%;
 
-.color-grey {
-    color: var(--grey-100);
-}
+    .--bold {
+        font-weight: bold;
+    }
 
-.color-grey span {
-    color: var(--blue-main);
+    p {
+        margin-bottom: 5%;
+    }
 }
-
 
 .why {
-    margin-top: 10%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        align-self: center;
+    }
+
+    .picbox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .box {
+            width: 30%;
+            margin-top: 3%;
+            margin-left: 2%;
+
+            .heading {
+                text-align: center;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+
+
+        }
+    }
 }
 
-.why h1 {
-    margin-bottom: 10%;
+
+
+@include laptop {
+    .idea {
+
+        p {
+            font-size: $font-plain-text-laptop;
+        }
+
+        .box {
+            h3 {
+                font-size: $font-under-logo-laptop;
+            }
+        }
+    }
+
+    .why {
+        h3 {
+            font-size: $font-under-logo-laptop;
+        }
+    }
 }
 
-.why .picbox {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
+
+@include mobile {
+    .paired {
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+            text-wrap: wrap;
+            margin-bottom: 10%;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .idea {
+
+        p {
+            font-size: $font-plain-text-mobile;
+        }
+
+        .picbox {
+            margin: 10% 0;
+            flex-direction: column;
+
+            .pic {
+                text-align: center;
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        .picbox--reverse {
+            flex-direction: column-reverse;
+        }
+
+        .box {
+            width: 90%;
+            padding: 10% 7%;
+
+            h3 {
+                font-size: $font-under-logo-mobile;
+                margin-bottom: 7%;
+            }
+
+
+        }
+    }
+
+    .why {
+
+        p {
+            font-size: $font-plain-text-mobile;
+        }
+
+        h3 {
+            font-size: $font-under-logo-mobile;
+            margin: 5%;
+        }
+
+        .picbox {
+            flex-direction: column;
+
+            .box {
+                width: 90%;
+                height: 270px;
+
+                .heading {
+                    font-size: $font-bold-subtitile-mobile;
+                    margin: 5%;
+                }
+            }
+        }
+    }
+
 }
 
-.longbox {
-    height: 392px;
-    margin-bottom: 5%;
-    margin-top: 0;
-    background-color: white;
-    box-shadow: var(--shadow-2);
-    border-radius: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+@include tablet {
+    .idea {
 
-.longbox p {
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: left;
-}
+        p {
+            font-size: $font-plain-text-tablet;
+        }
 
-.longbox .heading {
-    text-align: center;
-    color: var(--grey-100);
-}
-
-.longbox .plaintext {
-    margin-top: auto;
-    margin-bottom: auto;
+        .box {
+            h3 {
+                font-size: $font-under-logo-mobile;
+            }
+        }
+    }
 }

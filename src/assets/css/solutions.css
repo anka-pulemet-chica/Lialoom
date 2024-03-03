@@ -29,7 +29,7 @@
 .idea p,
 .some-text p,
 .some-text spin,
-.longbox p {
+.box p {
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
@@ -84,7 +84,7 @@
     width: 100%;
 }
 
-.longbox {
+.box {
     height: 392px;
     margin-bottom: 5%;
     margin-top: 0;
@@ -95,18 +95,18 @@
     padding-bottom: 10px;
 }
 
-.longbox p {
+.box p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: left;
 }
 
-.longbox .heading {
+.box .heading {
     text-align: center;
     color: var(--grey-100);
 }
 
-.longbox .plaintext {
+.box .plaintext {
     margin-top: auto;
     margin-bottom: auto;
 }
