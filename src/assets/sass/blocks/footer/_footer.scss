@@ -1,0 +1,39 @@
+.page-footer {
+    //Отличие от макета
+    // font-family: $FranklinMedium-font;
+    @extend %roboto-medium;
+    line-height: 1.2;
+
+
+    a {
+
+        &:hover {
+            color: $purple-another;
+        }
+    }
+
+    .info {
+        display: flex;
+
+
+
+        .email {
+            color: $blue-dark;
+            text-decoration: underline;
+        }
+    }
+
+    .menu {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+}

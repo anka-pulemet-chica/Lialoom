@@ -1,0 +1,97 @@
+    @include laptop {
+        .page-footer {
+            font-size: $font-plain-text-tablet;
+            margin: 5% 2%;
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                width: 350px;
+            }
+
+            .menu {
+                padding-left: 3rem;
+                padding-right: 2rem;
+            }
+
+            .contacts {
+                border-right: $blue-dark 2px solid;
+            }
+
+            .icons {
+                padding-left: 3rem;
+
+                &>* {
+                    margin-right: 0.7rem;
+                }
+            }
+        }
+
+    }
+
+
+    @include mobile {
+        .page-footer {
+            font-size: $font-bold_subtitile-mobile;
+            flex-direction: column;
+            margin: 15% 0;
+
+            button {
+                width: 75%;
+            }
+
+
+            .info {
+                flex-direction: column;
+                margin: 1rem 1.5rem;
+
+
+                .menu {
+                    margin: 1rem 0;
+                }
+
+                .contacts {
+                    border-bottom: $blue-dark 2px dotted;
+                    margin-bottom: 1.5rem;
+                    padding-bottom: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+    @include tablet {
+        .page-footer {
+            font-size: $font-plain-text-tablet;
+            margin: 5% 2%;
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                width: 250px;
+                font-size: $font-button-mobile;
+            }
+
+            .menu {
+                padding-left: 3rem;
+                padding-right: 2rem;
+            }
+
+            .contacts {
+                border-right: $blue-dark 2px solid;
+            }
+
+            .icons {
+                padding-left: 3rem;
+
+                &>* {
+                    margin-right: 0.7rem;
+                }
+            }
+        }
+
+    }

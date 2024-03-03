@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout.js'
-import '../assets/css/form.css'
+// import '../assets/css/form.css'
 
 const Form = () => {
     return (

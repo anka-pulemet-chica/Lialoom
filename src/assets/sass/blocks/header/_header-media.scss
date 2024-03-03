@@ -1,0 +1,161 @@
+@include laptop {
+    .header {
+
+        font-size: $font-plain-text-tablet;
+
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        .nav-btn {
+            display: none;
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        .button--book {
+            margin-right: 50px;
+        }
+
+
+        .nav {
+            display: flex;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-links {
+                display: flex;
+
+                .nav-link {
+                    padding: 0 0.8rem;
+                }
+
+            }
+
+            .drop {
+                position: absolute;
+                top: 4.2rem;
+                border-color: white;
+                padding-left: 100px;
+                border: var(--blue-50) 0px solid;
+                background-color: var(--blue-50);
+            }
+
+            .arrow {
+                left: 3px;
+            }
+        }
+
+
+
+    }
+}
+
+@include mobile {
+    .header {
+        font-size: $font-bold-plain-text-mobile;
+
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+
+            .nav-link {
+                margin-left: 20px;
+
+            }
+        }
+
+        .container {
+            height: 380px;
+        }
+
+
+        .button--book {
+            margin-bottom: 100px;
+        }
+
+        .close {
+            visibility: hidden;
+            height: 0;
+        }
+
+        .show {
+            padding-top: 10%;
+            visibility: visible;
+            height: 100%;
+        }
+
+        .arrow {
+            left: 10px;
+        }
+
+        .button-icon {
+            display: none;
+        }
+
+
+
+
+    }
+}
+
+@include tablet {
+
+    .header {
+
+        font-size: $font-plain-text-tablet;
+        margin: 0;
+
+
+        .nav-btn {
+            display: none;
+        }
+
+        .logo {
+            margin-left: 2px;
+        }
+
+
+        .nav {
+            display: flex;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .arrow {
+                left: 1px;
+            }
+
+            .nav-links {
+                display: flex;
+                margin: 0 0.5%;
+
+                .nav-link {
+                    padding: 0 4px;
+                }
+
+            }
+
+            .drop {
+                position: absolute;
+                top: 4.2rem;
+                border-color: white;
+                padding-left: 100px;
+                border: var(--blue-50) 0px solid;
+                background-color: var(--blue-50);
+            }
+        }
+    }
+}

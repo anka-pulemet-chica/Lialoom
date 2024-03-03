@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import '../../assets/css/solutions.css'
+// import '../../assets/css/solutions.css'
 
 import cust from "../../assets/img/solutions/customer.svg"
 import disc from "../../assets/img/solutions/discount.svg"
@@ -107,7 +107,7 @@ const Ups = () => {
             <hr />
             <div className="some-text">
                 <p >Schedule a discovery call with our Sales Expert to uncover your business development potential and receive a tailored offer - plan for moving forward.</p>
-                <p class="color-grey">  <span>Lialoom</span> offers a dedicated team of sales specialists at every level to develop and implement a tailored strategy for your needs. Engage a comprehensive team, including Researchers, Copywriters, SDRs, Email Deliverability specialists, Account Executives, at the cost of a single specialist. We excel at resource management, ensuring optimal engagement for maximum efficiency.</p>
+                <p className="color-grey">  <span>Lialoom</span> offers a dedicated team of sales specialists at every level to develop and implement a tailored strategy for your needs. Engage a comprehensive team, including Researchers, Copywriters, SDRs, Email Deliverability specialists, Account Executives, at the cost of a single specialist. We excel at resource management, ensuring optimal engagement for maximum efficiency.</p>
             </div>
             <hr />
 

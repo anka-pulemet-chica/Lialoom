@@ -1,0 +1,71 @@
+.header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: $grey-bg;
+    width: 100%;
+    padding-bottom: 5px;
+    //Отличие от макета
+    // font-family: $FranklinMedium-font;
+
+    .drop {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+
+        &>* {
+            line-height: 1.5;
+            background-color: $grey-bg;
+        }
+    }
+
+    .nav-links {
+        a:hover {
+            color: $purple-another;
+            border-bottom: 2px solid $blue-dark;
+        }
+    }
+
+
+    .nav-link {
+        line-height: 2;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .nav-btn {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        color: $blue-dark;
+    }
+
+    .dropped-img {
+        width: 15px;
+        height: 15px;
+        margin-right: 0.7em;
+        margin-left: 0.7em;
+    }
+
+    .arrow {
+        position: relative;
+        top: 3px;
+        left: 10px;
+    }
+
+    .trigger:active {
+        color: $blue-dark;
+    }
+
+    .button-icon {
+        background-color: transparent;
+        position: relative;
+        left: 20px;
+        top: 5px;
+
+    }
+
+}

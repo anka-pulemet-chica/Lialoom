@@ -319,9 +319,10 @@ button:hover {
     .header {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
-    .header .nav-center {
+    .header .nav {
         display: flex;
         flex-direction: column;
     }
@@ -377,13 +378,13 @@ button:hover {
         margin-bottom: 0.5rem;
     }
 
-    .header .nav-center {
+    .header .nav {
         flex: 2;
         display: flex;
         align-items: center;
     }
 
-    .header .nav-center .nav-links {
+    .header .nav .nav-links {
         width: 80%;
         margin-left: 15%;
         display: flex;

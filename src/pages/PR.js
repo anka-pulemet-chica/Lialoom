@@ -2,14 +2,14 @@ import React from 'react'
 import Layout from "../components/Layout"
 
 
-const careers = () => {
+const PR = () => {
     return (
         <Layout>
             <div>
-                <h1>Join ot our team!</h1>
+                <h1>PR and marketing page</h1>
             </div>
         </Layout>
     )
 }
 
-export default careers
+export default PR

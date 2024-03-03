@@ -1,0 +1,16 @@
+@import 'common/variables',
+'common/fonts',
+'common/media-breakpoints',
+'common/globals';
+
+
+@import 'blocks/header/header',
+'blocks/header/header-media';
+
+@import 'blocks/footer/footer',
+'blocks/footer/footer-media';
+
+@import 'blocks/homepage/homepage',
+'blocks/homepage/homepage-media';
+
+@import 'blocks/pricing'

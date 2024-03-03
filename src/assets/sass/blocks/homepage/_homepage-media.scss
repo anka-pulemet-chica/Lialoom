@@ -1,0 +1,151 @@
+@include laptop {
+    .homepage {
+        .background {
+            background-image: url("../img/bg/homepage.svg");
+
+        }
+
+        .first-page {
+            font-size: $font-logo-laptop;
+
+            .company-name {
+                padding-top: 10%;
+                font-size: $font-logo-laptop;
+            }
+
+            .slogan {
+                font-size: $font-under-logo-laptop;
+                line-height: 1.2;
+            }
+
+            button {
+                margin: 5% 0;
+
+            }
+
+            .simpletext {
+                width: 35%;
+                font-size: $font-plain-text-laptop;
+                margin-top: 8%;
+                margin-bottom: 10%;
+
+
+                p {
+                    line-height: 1.2;
+                }
+            }
+        }
+
+        .cycle {
+            background-image: url("../img/icons/cycle.svg");
+        }
+    }
+}
+
+@include mobile {
+    .homepage {
+        .background {
+            background-image: url("../img/bg/homepageM.svg");
+        }
+
+        .first-page {
+
+            .company-name {
+                padding-top: 20%;
+                padding-bottom: 5%;
+                font-size: $font-logo-mobile;
+            }
+
+            .slogan {
+                font-size: $font-bold-subtitile-mobile;
+                line-height: 1.2;
+            }
+
+            button {
+                margin: 5% 0;
+            }
+
+            .simpletext {
+                width: 90%;
+                font-size: $font-plain-text-mobile;
+                margin-top: 8%;
+                margin-bottom: 10%;
+                line-height: 1.2;
+            }
+
+        }
+
+        .cycle {
+            background-image: url("../img/icons/cycleM.svg");
+        }
+
+        .cycle .fit {
+            margin: 30px 0;
+            height: 550px;
+            width: 90%;
+        }
+
+        .technics-page {
+            font-size: $font-plain-text-mobile;
+            margin: 15% 2%;
+
+            .technics {
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                div {
+                    min-width: 22%;
+                    border: 1px dotted white;
+
+                    @media only screen and (max-width: 320px) {
+                        min-width: 20%;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
+
+@include tablet {
+    .homepage {
+        .background {
+            background-image: url("../img/bg/homepage.svg");
+        }
+
+        .first-page {
+
+            .company-name {
+                padding-top: 10%;
+                font-size: $font-logo-tablet;
+            }
+
+            .slogan {
+                font-size: $font-under-logo-tablet;
+                line-height: 1.2;
+            }
+
+            button {
+                margin: 5% 0;
+            }
+
+            .simpletext {
+                width: 44%;
+                font-size: $font-plain-text-mobile;
+
+            }
+        }
+
+        .cycle {
+            background-image: url("../img/icons/cycle.svg");
+        }
+
+        .technics {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

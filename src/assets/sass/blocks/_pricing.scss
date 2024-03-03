@@ -1,0 +1,256 @@
+.pricing {
+    .boxes {
+        .box {
+            .price {
+                padding-top: 5%;
+                padding-left: 5%;
+
+                .starting {
+                    color: $blue-dark;
+                    font-size: $font-button-mobile;
+                    text-align: center;
+
+
+                    .PriceValue {
+                        font-family: $FranklinMedium-font;
+                        font-size: $font-h1-laptop;
+                    }
+                }
+
+                .comments {
+                    font-family: 'Roboto', sans-serif;
+                    text-align: center;
+                    color: $grey-middle;
+                    font-size: $font-button-mobile;
+                    margin-top: 1%;
+                    margin-bottom: 2%;
+
+                }
+            }
+
+            .benefits {
+
+                margin-left: 5%;
+                margin-top: 7%;
+                line-height: 1.2;
+                list-style-type: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+
+                .benefit {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 2%;
+                    align-items: flex-start;
+                }
+
+                img {
+                    margin-right: 2%;
+                }
+
+                span {
+                    display: block;
+                }
+
+            }
+
+            .PriceContainer {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .bottom {
+                text-align: center;
+            }
+
+
+        }
+    }
+
+
+
+
+}
+
+
+
+@include laptop {
+    .pricing {
+        background: linear-gradient(#eef1f6, $blue-light, $grey-bg);
+        // background-size: cover;
+        font-family: $FranklinMedium-font;
+
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            .box {
+                width: 35%;
+                margin: 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .pre {
+
+                    h3 {
+                        height: 70px;
+                    }
+
+                    .description {
+
+                        font-size: $font-bold-subtitile-laptop;
+                        color: $grey-middle;
+                        height: 120px;
+                    }
+
+                }
+
+                h3 {
+                    font-family: $FranklinMedium-font;
+                    font-size: $font-under-logo-laptop;
+                }
+
+                .benefits {
+                    min-height: 550px;
+                }
+
+
+                .price {
+                    .starting {
+                        font-size: $font-bold-subtitile-laptop;
+                        text-align: center;
+
+                        .per {
+                            font-size: $font-plain-text-tablet;
+                        }
+
+                        .PriceContainer {
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
+
+    }
+}
+
+@include mobile {
+    .pricing {
+
+        .boxes {
+            flex-direction: column;
+
+            .box {
+                width: 85%;
+                margin: 3% 5%;
+
+                .pre {
+                    padding: 5%;
+                    margin-bottom: 10%;
+
+                    h3 {
+                        font-size: $font-bold-subtitile-laptop;
+                    }
+
+                    .description {
+                        font-size: $font-bold-subtitile-mobile;
+                        color: $grey-middle;
+                        margin: 3% 0;
+                    }
+                }
+
+                .price {
+                    .starting {
+                        display: block;
+                        width: 80%;
+                        margin-top: 3%;
+
+                    }
+
+                    .comments {
+                        width: 80%;
+                    }
+                }
+
+                img {
+                    height: 17px;
+                }
+
+            }
+        }
+    }
+}
+
+
+@include tablet {
+
+    .pricing {
+        background: linear-gradient(#eef1f6, $blue-light, $grey-bg);
+        // background-size: cover;
+        font-family: $FranklinMedium-font;
+
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            .box {
+                width: 35%;
+                margin: 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .pre {
+
+                    h3 {
+                        height: 50px;
+                        font-size: $font-bold-subtitile-tablet;
+                    }
+
+                    .description {
+
+                        font-size: $font-plain-text-tablet;
+                        color: $grey-middle;
+                        height: 120px;
+                    }
+
+                }
+
+                h3 {
+                    font-family: $FranklinMedium-font;
+                    font-size: $font-under-logo-laptop;
+                }
+
+                .benefits {
+                    height: 400px;
+                }
+
+                .price {
+                    .starting {
+                        display: block;
+                        margin-top: 3%;
+                    }
+                }
+
+                img {
+                    height: 17px;
+                }
+
+
+            }
+
+        }
+
+    }
+}

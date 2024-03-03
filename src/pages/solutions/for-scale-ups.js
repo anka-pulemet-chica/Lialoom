@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import '../../assets/css/solutions.css'
+// import '../../assets/css/solutions.css'
 
 import cust from "../../assets/img/solutions/customer.svg"
 import disc from "../../assets/img/solutions/discount.svg"
