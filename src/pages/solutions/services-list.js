@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-// import '../../assets/css/solutions.css'
 
 import training from "../../assets/img/solutions/training.svg"
 import lead from "../../assets/img/solutions/lead.svg"
