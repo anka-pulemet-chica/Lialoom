@@ -12,6 +12,10 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
+
+  flags: {
+    PARALLEL_QUERY_RUNNING: true
+  },
   siteMetadata: {
     title: "Lialoom sales agency"
   },

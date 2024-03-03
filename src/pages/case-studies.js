@@ -19,10 +19,6 @@ query QueryCases {
       picture {
         url
         title
-        gatsbyImage(
-          layout: CONSTRAINED
-          placeholder: BLURRED
-        )
       }
     }
   }
@@ -46,7 +42,7 @@ const Case = () => {
                   <Carousel.Item>
                     {/* <GatsbyImage image={pathToImage} className="page-img" alt="" /> */}
                     <div className="box">
-                      <img src={page.picture.url} alt={page.picture.title} width="300" height="200" />
+                      <img src={page.picture.url} alt={page.picture.title} fill />
 
                       <div><p>{page.title}</p> </div>
                       <div><span>{page.childContentfulCaseStudiesContentTextNode.content.substring(0, 200) + '...'}</span> </div>
