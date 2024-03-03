@@ -1,21 +1,69 @@
-// import React from 'react'
+import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
-// import kick1 from '../assets/img/slides/kick1.svg'
-// import kick2 from '../assets/img/slides/kick2.svg'
-// import kick3 from '../assets/img/slides/kick3.svg'
-// import kick4 from '../assets/img/slides/kick4.svg'
+const Kick = () => {
+    return (
+        <div >
+            <div className="block block--right"><StaticImage
+                className="img"
+                alt="step 1"
+                src="../assets/img/kick/img1.png"
+                width={400}
+                height={250} />
+                <StaticImage
+                    className="step step--right"
+                    alt="step 1"
+                    src="../assets/img/kick/step1.svg"
+                    width={550}
+                    height={300} /> </div>
+
+            <div className="block block--left">
+                <StaticImage
+                    className="step step--left"
+                    alt="step 2"
+                    src="../assets/img/kick/step2.svg"
+                    width={550}
+                    height={300} />
+                <StaticImage
+                    className="img"
+                    alt="step 2"
+                    src="../assets/img/kick/img2.png"
+                    width={400}
+                    height={250} />
+            </div>
 
 
-// const Kick = () => {
-//     return (
-//         <div >
-//             <img src={kick1} alt="step1" />
-//             <img src={kick2} alt="step2" />
-//             <img src={kick3} alt="step3" />
-//             <img src={kick4} alt="step4" />
+            <div className="block block--right"><StaticImage
+                className="img"
+                alt="step 3"
+                src="../assets/img/kick/img3.png"
+                width={400}
+                height={250} />
+                <StaticImage
+                    className="step step--right"
+                    alt="step 3"
+                    src="../assets/img/kick/step3.svg"
+                    width={550}
+                    height={300} /> </div>
 
-//         </div>
-//     )
-// }
 
-// export default Kick
+            <div className="block block--left">
+                <StaticImage
+                    className="step step--left step--last"
+                    alt="step 4"
+                    src="../assets/img/kick/step4.svg"
+                    width={570}
+                    height={280}
+                    quality={100} />
+                <StaticImage
+                    className="img"
+                    alt="step 4"
+                    src="../assets/img/kick/img4.png"
+                    width={400}
+                    height={250} />
+            </div>
+        </div>
+    )
+}
+
+export default Kick

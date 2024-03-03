@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import { Carousel } from "react-bootstrap"
-import "../assets/sass/common/slide.scss"
+import "../assets/sass/blocks/slide.scss"
 
 
 const Slide = () => {

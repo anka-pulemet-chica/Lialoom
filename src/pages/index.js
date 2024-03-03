@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import { Link } from 'gatsby'
 import Slide from '../components/Slide'
-// import Kick from "../components/Kick"
+import Kick from "../components/Kick"
 
 
 export default function Home() {
@@ -61,23 +61,15 @@ export default function Home() {
 
           </div>
         </div>
-        {/* <StaticImage
-          alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-          src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-        /> */}
         <Slide />
 
-        {/* {data.edges.map(({ node }) => (
-          <p key={node.name}>
-          </p>
-        ))} */}
-        {/*<hr />
+        <hr />
 
 
-      <div className="kikoff">
-        <h2>How to kickoff with us:</h2>
-        <Kick />
-      </div> */}
+        <div className="kickoff">
+          <h2>How to kickoff with us:</h2>
+          <Kick />
+        </div>
       </div>
     </Layout >
 
