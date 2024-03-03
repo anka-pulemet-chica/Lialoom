@@ -4,17 +4,20 @@ import { Carousel } from "react-bootstrap"
 import "../assets/sass/common/slide.scss"
 
 
-function setResponsiveImage() {
-  const screenWidth = window.innerWidth;
-  if (screenWidth < "767px") {
-  }
-}
-
-
 const Slide = () => {
   const data = useStaticQuery(graphql`
 query QuerySlideLaptop {
-  allFile(filter: {relativeDirectory: {eq: "laptop"}}) {
+  laptopImage: allFile(filter: {relativeDirectory: {eq: "laptop"}}) {
+    nodes {
+      svg {
+        relativePath
+      }
+      publicURL
+      relativeDirectory
+    }
+  }
+
+  mobileImage: allFile(filter: {relativeDirectory: {eq: "mobile"}}) {
     nodes {
       svg {
         relativePath
@@ -24,10 +27,16 @@ query QuerySlideLaptop {
     }
   }
 }`)
+
+  const laptopContainer = data.laptopImage.nodes;
+  const mobileContainer = data.mobileImage.nodes;
+
+  const format = (window.innerWidth < 767) ? mobileContainer : laptopContainer
   return (
+
     <div className="slide">
       <Carousel className="carousel">
-        {data.allFile.nodes.map((pic, index) => (
+        {format.map((pic, index) => (
           <Carousel.Item key="">
             <img src={pic.publicURL} alt="some alt" />
           </Carousel.Item>
