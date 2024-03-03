@@ -7,7 +7,7 @@ const Form = () => {
         <Layout>
             <main className="form-page">
                 <section className="box">
-                    <form className="form contact-form">
+                    <form className="form contact-form" action="https://formspree.io/f/xdoqzran" method="POST">
                         <div className="form-row">
                             <h2>Contact details</h2>
                             <br />
